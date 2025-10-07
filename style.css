@@ -1,0 +1,122 @@
+/* General Page Style */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  /* Main Container */
+  .container {
+    margin: 30px;
+    width: 850px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+  }
+  
+  /* Headings */
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  /* Card Box */
+  .card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  /* Inputs */
+  input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #2980b9;
+    outline: none;
+  }
+  
+  /* Buttons */
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    background: #1f6391;
+    transform: scale(1.05);
+  }
+  
+  /* Suggestions List */
+  #result {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  #result li {
+    background: #ecf0f1;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.3s;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  #result li:hover {
+    transform: scale(1.05);
+    background: #d6eaf8;
+  }
+  
+  /* Status Message */
+  .status {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
