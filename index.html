@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Friend Suggestion</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>👥 Friend Suggestion System</h1>
+    <p class="subtitle">Discover new friends based on mutual connections</p>
+
+    <!-- Friend Suggestion Section -->
+    <div class="card">
+      <label for="user">Enter Your Name:</label>
+      <input type="text" id="user" placeholder="e.g. Alice">
+      <button onclick="getSuggestions()">🔍 Find Suggestions</button>
+    </div>
+
+    <div class="card">
+      <h2>✨ Suggested Friends</h2>
+      <ul id="result"></ul>
+    </div>
+
+    <!-- Add Friend Section -->
+    <div class="card">
+      <h2>➕ Add Friendship</h2>
+      <label for="friend1">Friend 1:</label>
+      <input type="text" id="friend1" placeholder="e.g. Alice"><br><br>
+      <label for="friend2">Friend 2:</label>
+      <input type="text" id="friend2" placeholder="e.g. Bob"><br><br>
+      <button onclick="addFriendship()">✅ Add Friendship</button>
+      <p id="addStatus" class="status"></p>
+    </div>
+
+    <!-- Graph Section -->
+    <div class="card">
+      <h2>📊 Social Network Graph</h2>
+      <canvas id="networkGraph"></canvas>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
